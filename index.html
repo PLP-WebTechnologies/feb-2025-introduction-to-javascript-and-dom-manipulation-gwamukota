@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4285f4;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript DOM Manipulation</h1>
+    <p>Click the buttons below to see how JavaScript can change the content and style of this page.</p>
+    <div class="section">
+        <h2>1. Changing Text Content</h2>
+        <p id="message">This text will change when you click the button.</p>
+        <button id="textButton">Change Text</button>
+    </div>
+    <div class="section">
+        <h2>2. Changing CSS Styles</h2>
+        <p id="styleText">This paragraph's font and color will change.</p>
+        <button id="styleButton">Change Style</button>
+    </div>
+    <div class="section">
+        <h2>3. Adding and Removing Elements</h2>
+        <ul id="itemList">
+            <li>First item</li>
+            <li>Second item</li>
+        </ul>
+        <button id="addButton">Add New Item</button>
+        <button id="removeButton">Remove Last Item</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
